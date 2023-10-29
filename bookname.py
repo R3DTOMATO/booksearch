@@ -6,7 +6,7 @@ from urllib.request import urlopen
 def app():
     url="https://drive.google.com/file/d/1nPqkspdr4l_BZf6mo4rShBkxVOohg251/view?usp=sharing"
     response = urllib.request.urlopen(url)
-    df = pd.read_csv("도서정보2.csv", encoding='cp949')
+    df = pd.read_csv("bookseach/도서정보2.CSV", encoding='cp949')
     return df.set_index("책제목")
     
 try:
