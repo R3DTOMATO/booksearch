@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보물섬 - 도서 검색 엔진</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/보물섬로고.png">
+</head>
+<body>
+    <div class="ocean-bg"></div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-treasure-chest"></i>
+                <h1>보물섬</h1>
+            </div>
+            <p class="tagline">당신만의 책 보물창고</p>
+        </header>
+
+        <section class="search-section card">
+            <div class="card-header">
+                <i class="fas fa-search"></i>
+                <h2>보물 찾기</h2>
+            </div>
+            <div class="search-options">
+                <div class="select-wrapper">
+                    <select id="searchType">
+                        <option value="책제목">제목으로 검색</option>
+                        <option value="작가">저자로 검색</option>
+                        <option value="출판사">출판사로 검색</option>
+                        <option value="도서분류">카테고리로 검색</option>
+                        <option value="책장명">책장으로 검색</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="search-input-wrapper">
+                    <input type="text" id="searchQuery" placeholder="보물을 찾아보세요...">
+                    <button id="searchBtn" class="btn"><i class="fas fa-compass"></i> 탐색</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results card">
+            <div class="card-header">
+                <i class="fas fa-gem"></i>
+                <h2>발견한 보물</h2>
+            </div>
+            <div id="searchResults" class="treasure-chest"></div>
+        </section>
+
+        <footer>
+            <p>© 2025 보물섬 도서 엔진 - R3DTOMATO</p>
+            <p id="footerDateTime">2025-05-03 03:06:02 UTC</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
